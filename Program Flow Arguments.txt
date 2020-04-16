@@ -1,0 +1,31 @@
+from airtravel import *
+f, g= make_flights()
+
+f.num_available_seats()
+This is used to get the number of available seats on the Flight f which is hardcoded.
+
+f.allocate_seat("3A","Your name")
+This is used to allocate new seats apart from the hardcoded one.
+
+f.relocate_seat("3A","11C")
+This allocates the passenger to the new seat.
+
+f.make_boarding_cards(card_printer)
+This prints boarding cards of all the passengers for Flight F.
+
+To see the seating plan of the passengers for the flight follow these commands:
+
+from pprint import pprint as pp
+pp(f._seating)
+
+
+You can use all the functions similarly for Flight G like:
+g.num_available_seats()
+g.allocate_seat("3A","Your name")
+g.relocate_seat("3A","11C")
+g.make_boarding_cards(card_printer)
+
+To see the seating plan of the passengers for the flight follow these commands:
+
+from pprint import pprint as pp
+pp(g._seating)
